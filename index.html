@@ -210,18 +210,41 @@
 
   <!-- Contact / Google Form -->
   <section id="contact" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-[var(--blue)] text-center mb-6">Liên hệ & Đăng ký nhận tài liệu</h2>
-      <p class="text-center text-gray-600 mb-6">Đội ngũ <strong>canhosaigon</strong> hỗ trợ tư vấn, báo giá và đặt lịch tham quan dự án.</p>
-      <div class="rounded-2xl overflow-hidden shadow-soft border">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9H8X5Z63yR4jWEGTedA1VB8laj9DSaQ5Ir6t5cNRNyB4G5Q/viewform?usp=header" width="100%" height="820" frameborder="0" marginheight="0" marginwidth="0" title="Form liên hệ Eaton Park">Đang tải biểu mẫu…</iframe>
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-[var(--blue)] text-center mb-6">Đăng ký nhận tài liệu</h2>
+    <p class="text-center text-gray-600 mb-6">Vui lòng nhập thông tin, chúng tôi sẽ liên hệ bạn sớm nhất.</p>
+    <form action="mailto:hotro@canhosaigon.org" method="POST" enctype="text/plain" class="max-w-lg mx-auto space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium">Họ & Tên *</label>
+        <input type="text" id="name" name="Họ Tên" required class="w-full rounded-lg border border-gray-300 p-3">
       </div>
-      <div class="text-center mt-6 space-x-3">
-        <a href="mailto:hotro@canhosaigon.org" class="btn btn-outline">Gửi Email</a>
-        <a href="tel:+843679261869" class="btn btn-primary">Gọi Hotline</a>
+      <div>
+        <label for="phone" class="block text-sm font-medium">Số Điện Thoại *</label>
+        <input type="text" id="phone" name="Số Điện Thoại" required class="w-full rounded-lg border border-gray-300 p-3">
       </div>
-    </div>
-  </section>
+      <div>
+        <label for="email" class="block text-sm font-medium">Email *</label>
+        <input type="email" id="email" name="Email" required class="w-full rounded-lg border border-gray-300 p-3">
+      </div>
+      <div>
+        <label for="project" class="block text-sm font-medium">Bạn quan tâm loại hình</label>
+        <select id="project" name="Quan Tâm" class="w-full rounded-lg border border-gray-300 p-3">
+          <option value="Căn hộ 1 phòng ngủ">Căn hộ 1 phòng ngủ</option>
+          <option value="Căn hộ 2 phòng ngủ">Căn hộ 2 phòng ngủ</option>
+          <option value="Căn hộ 3 phòng ngủ">Căn hộ 3 phòng ngủ</option>
+          <option value="Penthouse">Penthouse</option>
+          <option value="Shophouse">Shophouse</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+      </div>
+      <p class="text-xs text-gray-500 text-center">
+        Bằng cách nhấn Gửi, bạn đồng ý với Chính sách Bảo mật và Điều khoản của canhosaigon.
+      </p>
+    </form>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-[var(--blue)] text-gray-200 py-8">
